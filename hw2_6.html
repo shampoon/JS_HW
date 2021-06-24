@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function mathPlus(a = 0, b = 0) { return a + ' + ' + b + ' = ' + (a + b) }
+        function mathMinus(a = 0, b = 0) { return a + ' - ' + b + ' = ' + (a - b) }
+        function mathMull(a = 0, b = 0) { return a + ' * ' + b + ' = ' + (a * b) }
+        function mathSub(a = 0, b = 1) { return (b === 0)? a + ' - ' + b + ' = ' + NaN:a + ' - ' + b + ' = ' + (a / b) }
+        function mathOperation(a = 1, b = 1, todo = '+'){
+            switch(todo){
+                case '+': return mathPlus(a, b);
+                case '-': return mathMinus(a, b);
+                case '*': return mathMull(a, b);
+                case '/': return mathSub(a, b);
+                default: alert('Неизвестный оператор: '+ todo);
+            }
+        }
+        alert(mathOperation(3, 4, '+'));
+        alert(mathOperation(3, 4, '-'));
+        alert(mathOperation(3, 4, '*'));
+        alert(mathOperation(3, 4, '/'));
+    </script>
+</body>
+
+</html>
