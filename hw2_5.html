@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function mathPlus(a = 0, b = 0) { return a + ' + ' + b + ' = ' + (a + b) }
+        function mathMinus(a = 0, b = 0) { return a + ' - ' + b + ' = ' + (a - b) }
+        function mathMull(a = 0, b = 0) { return a + ' * ' + b + ' = ' + (a * b) }
+        function mathSub(a = 0, b = 1) { return (b === 0)? a + ' - ' + b + ' = ' + NaN:a + ' - ' + b + ' = ' + (a / b) }
+        alert(mathPlus(3, 4));
+        alert(mathMinus(3, 4));
+        alert(mathMull(3, 4));
+        alert(mathSub(3, 4));
+    </script>
+</body>
+
+</html>
