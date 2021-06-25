@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        "use strict";
+        var basket = []; // [name, count, price]
+        basket.push(['Socks', 2, 3.45]);
+        basket.push(['Bicycle', 1, 435]);
+        basket.push(['Tomato', 1, 5.05]);
+        basket.push(['Potato', 10, 0.85]);
+        basket.push(['Photo frame', 1, 1.50]);
+        basket.push(['Keyboard', 1, 25.30]);
+        function countBasketPrice(arr){
+            var basket_summ = 0;
+            arr.forEach(function(item) {
+            basket_summ = basket_summ + item[1] * item[2];
+            });
+            return basket_summ;
+        }
+        
+        alert('В корзине товаров на сумму ' + countBasketPrice(basket))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

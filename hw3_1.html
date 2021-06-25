@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        "use strict";
+        function isSimple(val){
+            var cnt = 0;
+            for (var i=val; i>0; i--){
+                if (val%i === 0) cnt++;
+            }
+            if (cnt == 2) return true
+            else return false;
+        }
+        var num = 1;
+        var arr = [];
+        while (true){
+            if (isSimple(num)) arr.push(num);
+            num++;
+            if (num > 100) break;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
